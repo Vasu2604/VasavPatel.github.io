@@ -344,8 +344,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li .second-block {
   width: 60%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000; /* Set to opaque black for better readability */
+  background-color: color: rgba(0, 0, 0, 0.5); /* Light gray background for subtle contrast */
+  
+  overflow-wrap: break-word; /* Ensures long text will wrap within the container */
 }
+
+
 
 .fh5co-social-icons {
   margin: 0;
