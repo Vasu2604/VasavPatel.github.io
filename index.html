@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Background</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMcS4sqq3FQkZggmI1VV9zrgu9fKrcy5VST5g7R" crossorigin="anonymous">
+
+    <style>
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e9ecef;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+        .timeline-item.right {
+            left: 50%;
+        }
+        .timeline-badge {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            z-index: 100;
+            width: 20px;
+            height: 20px;
+            margin-left: -10px;
+            background-color: #6c757d;
+            border-radius: 50%;
+        }
+        .timeline-panel {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+        }
+        .timeline-heading h3 {
+            margin-top: 0;
+            color: #343a40;
+        }
+        .company {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/back.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t js-fullheight">
+							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+								<div class="profile-thumb" style="background: url(images/v2.jpg);"></div>
+								<h1><span>Vasav Patel</span></h1>
+								<h3><span id="dynamic-role"></span></h3>
+								<p>
+									<ul class="fh5co-social-icons">
+										<li><a href="https://www.linkedin.com/in/vasav-patel/"><i class="icon-linkedin2"></i></a></li>
+										<li>
+											<a href="https://github.com/Vasu2604" class="fab fa-github fa-2x" aria-label="GitHub"></a>
+										</li>										
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	
+		<style>
+			#dynamic-role {
+				font-weight: bold;
+				color: #ffffff; /* Customize color as needed */
+				border-right: 2px solid #ffffff; /* Blinking cursor effect */
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		</style>
+	
+		<script>
+			const roles = ["AI/ML Engineer", "Data Scientist","Data Analyst", "Full Stack Developer",];
+			let roleIndex = 0;
+			let charIndex = 0;
+			const typingSpeed = 100;  // Time in ms per character
+			const erasingSpeed = 50;  // Time in ms per character during erasing
+			const delayBetweenRoles = 2000;  // Delay between roles before erasing
+	
+			function typeRole() {
+				const role = roles[roleIndex];
+				if (charIndex < role.length) {
+					document.getElementById("dynamic-role").textContent += role.charAt(charIndex);
+					charIndex++;
+					setTimeout(typeRole, typingSpeed);
+				} else {
+					setTimeout(eraseRole, delayBetweenRoles);  // Pause before erasing
+				}
+			}
+	
+			function eraseRole() {
+				const role = roles[roleIndex];
+				if (charIndex > 0) {
+					document.getElementById("dynamic-role").textContent = role.substring(0, charIndex - 1);
+					charIndex--;
+					setTimeout(eraseRole, erasingSpeed);
+				} else {
+					roleIndex = (roleIndex + 1) % roles.length;  // Move to the next role
+					setTimeout(typeRole, typingSpeed);
+				}
+			}
+	
+			// Start typing effect on page load
+			document.addEventListener("DOMContentLoaded", function() {
+				typeRole();
+			});
+		</script>
+	</div>
+	
+
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Vasav Patel</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block">+1 669 249 1352</span></li>
+						<li><span class="first-block">Email:</span><span class="second-block">patelvasav2604@gmail.com</span></li>
+						<li><span class="first-block">Website:</span><span class="second-block">www.yoursite.com</span></li>
+						<li><span class="first-block">Address:</span><span class="second-block">754 The Alameda, San Jose, CA 95126</span></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2>Hey there, tech adventurers!</h2>
+					<p>I'm Vasav Patel, a Master's student in AI at San Jose State University, armed with Bachelor's degrees in Computer Science and Business Systems from NMIMS Deemed-to-be-University, Mumbai, India. My journey through the vast lands of academia and industry has leveled up my skills in AI, machine learning, and data science.</p>
+					<p>I'm on a quest to use AI to solve real-world puzzles and spark innovation. Always chasing the next tech upgrade, I'm eager to tackle new challenges and bring some geeky magic to exciting projects. Let's join forces and push the boundaries of what's possible—one algorithm at a time!</p>
+				</div>
+			</div>
+			<p><a href="https://drive.google.com/file/d/10xCS3ooqWXnk12f67rcltjyROKRNQlPH/view?usp=share_link" class="btn btn-default btn-lg" target="_blank">Resume</a></p>
+
+		</div>
+	</div>
+
+	<<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Background</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<!-- Work Experience Section -->
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li>
+						
+						<!-- Work Experience Item 1 -->
+						<li class="animate-box timeline-unverted" data-toggle="tooltip" data-placement="top" title="Click for more details">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Data Scientist Intern</h3>
+									<span class="company"><h4>Raj Vijtech Pvt Ltd</h4> - <span>July 2023 - December 2023</span></span>
+								</div>
+								<div class="timeline-body">
+									<p>Utilized data analysis to deliver actionable sales insights, enhancing campaign effectiveness by improving targeting and messaging strategies.</p>
+									<p>Developed an automated data pipeline using Python and ETL processes for efficient sales forecasting.</p> 
+									<p>Conducted exploratory data analysis on customer behavior and pricing strategies, driving increased customer engagement and optimizing acquisition techniques.</p>
+								</div>
+							</div>
+						</li>
+	
+						<!-- Work Experience Item 2 -->
+						<li class="timeline-inverted animate-box" data-toggle="tooltip" data-placement="top" title="Click for more details">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Software Developer Intern</h3>
+									<span class="company"><h4>Webby Genius Infotech Pvt. Ltd</h4> - <span>June 2022 - September 2022</span></span>
+								</div>
+								<div class="timeline-body">
+									<p>Designed and launched the university’s website and chatbot to provide essential information on academics, facilities, transit, and nearby lodging, enhancing user engagement and satisfaction.</p>
+									<p>Improved the website's visual appeal and usability by creating a responsive, user-centric interface, reducing bounce rates and increasing engagement.</p>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted animate-box" data-toggle="tooltip" data-placement="top" title="Click for more details">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Data Science & Business Analytics Internship</h3>
+									<span class="company"><h4>The Sparks Foundation</h4> - <span>2022 - 2022</span></span>
+								</div>
+								<div class="timeline-body">
+									<p>Created Data visualization graphics, translating complex data sets into comprehensive visual representations. Translated cost/benefits of machine learning technology for non-technical audiences.</p>
+								</div>
+							</div>
+						</li>
+
+	
+						<br>
+	
+						<!-- Education Section -->
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+	
+						<!-- Education Item 1 -->
+						<li class="timeline-inverted animate-box" data-toggle="tooltip" data-placement="top" title="Click for more details">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Master's Degree - Artificial Intelligence</h3>
+									<span class="company"><h4>San Jose State University</h4> - <span>January 2024 - Present</span></span>
+								</div>
+								<div class="timeline-body">
+									<p>Currently pursuing a Master’s degree in Artificial Intelligence, delving into advanced topics in machine learning, NLP, advanced data mining, and IoT, equipping me with the knowledge to innovate in AI.</p>
+								</div>
+							</div>
+						</li>
+	
+						<!-- Education Item 2 -->
+						<li class="animate-box timeline-unverted" data-toggle="tooltip" data-placement="top" title="Click for more details">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelor's Degree - Computer Science and Business Systems</h3>
+									<span class="company"><h4>NMIMS Deemed-to-be-University</h4> - <span>2019 - 2023</span></span>
+								</div>
+								<div class="timeline-body">
+									<p>Graduated with a B.Tech in Computer Science and Engineering, covering algorithms, data structures, and software development, laying a strong foundation in both theoretical and applied computer science.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="fh5co-skills" class="animate-box" style="background-color: #4b2e2d; color: #ffffff;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 style="color: #f4e1d2;">Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span style="color: #f4e1d2;"><strong>Communication</strong> 95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span style="color: #f4e1d2;"><strong>Team Work</strong> 93%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span style="color: #f4e1d2;"><strong>Project Management</strong> 90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span style="color: #f4e1d2;"><strong>Creativity</strong> 89%</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left" style="color: #f4e1d2;">Machine Learning</span><span class="value-right" style="color: #f4e1d2;">95%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+								 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%; background-color: #d6a178;">
+							</div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left" style="color: #f4e1d2;">Fullstack Development</span><span class="value-right" style="color: #f4e1d2;">90%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+								 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: #d6a178;">
+							</div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left" style="color: #f4e1d2;">Git</span><span class="value-right" style="color: #f4e1d2;">88%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+								 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #d6a178;">
+							</div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left" style="color: #f4e1d2;">MLOPS</span><span class="value-right" style="color: #f4e1d2;">85%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+								 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: #d6a178;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left" style="color: #f4e1d2;">SQL/Postgres</span><span class="value-right" style="color: #f4e1d2;">80%</span></h3>
+						<div class="progress">
+							<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+								 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: #d6a178;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="fh5co-work" class="fh5co-bg-light">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="https://github.com/Vasu2604/Oskibot" target="_blank" class="work" style="background-image: url(images/chatbot-speech.png);">
+						<div class="desc">
+							<h3>OskiBot</h3>
+							<span>RAG Based University’s Chatbot</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="https://github.com/Vasu2604/Personal-Finance-LLM" target="_blank" class="work" style="background-image: url(images/LLM.jpg);">
+						<div class="desc">
+							<h3>Personal Finance LLM</h3>
+							<span>Fintech LLM</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" target="_blank" style="background-image: url(images/Credit-score.png);">
+						<div class="desc">
+							<h3>Credit Scoring Model using ML</h3>
+							<span>Predict Credit Score using ML</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/game-frog.png);">
+						<div class="desc">
+							<h3>GlobeTrotter</h3>
+							<span>2D Game</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="fh5co-started" class="fh5co-bg-dark">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Hire Me!</h2>
+					<p>I'm always eager to explore new opportunities and collaborations. With a passion for solving complex problems through data science, AI, and full-stack development, I'm on a mission to make an impact.</p>
+					<p>If you're looking for someone who brings both technical expertise and a creative approach to projects, I’d love to hear from you. Let's discuss how we can work together to push boundaries, innovate, and bring exciting ideas to life. Feel free to reach out—I’m just a message away!</p>
+					<p><a href="#" class="btn btn-default btn-lg">Contact Me</a></p>
+					<ul class="fh5co-social-icons">
+						<li>
+							<a href="https://www.linkedin.com/in/vasav-patel/">
+								<i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:patelvasav2604@gmail.com">
+								<i class="fas fa-envelope fa-2x" aria-label="Email"></i>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+16692491352">
+								<i class="fas fa-phone fa-2x" aria-label="Phone"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; Copyright Vasav Patel. All Rights Reserved <br>Designed by Vasav Patel </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
